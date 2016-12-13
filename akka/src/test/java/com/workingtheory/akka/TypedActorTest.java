@@ -3,9 +3,7 @@ package com.workingtheory.akka;
 import akka.actor.ActorSystem;
 import akka.actor.TypedActor;
 import akka.actor.TypedActorExtension;
-import akka.actor.TypedProps;
 import com.workingtheory.akka.actors.HelloWorldTypedActor;
-import com.workingtheory.akka.actors.HelloWorldTypedActorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -30,7 +28,8 @@ public class TypedActorTest
 		TypedActorExtension extension = TypedActor.get(system);
 
 		// Creating a typed actor
-		HelloWorldTypedActor actorProxy = extension.typedActorOf(new TypedProps<>(HelloWorldTypedActor.class, HelloWorldTypedActorImpl.class));
+		// HelloWorldTypedActor actorProxy = extension.typedActorOf(new TypedProps<>(HelloWorldTypedActor.class, HelloWorldTypedActorImpl.class));
+		HelloWorldTypedActor actorProxy = extension.typedActorOf(null);
 
 		logger.debug("Created actor 'HelloWorldTypedActor' .. ");
 

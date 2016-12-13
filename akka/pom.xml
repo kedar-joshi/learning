@@ -30,13 +30,13 @@
 				</includes>
 			</resource>
 		</resources>
-	</build>l̥
+	</build>
 
 	<properties>
 
-		<log4j.version>2.6.2</log4j.version>
-		<lmax.version>3.3.5</lmax.version>
-		<akka.version>2.4.10</akka.version>
+		<log4j.version>2.7</log4j.version>
+		<lmax.version>3.3.6</lmax.version>
+		<akka.version>2.4.14</akka.version>
 
 		<junit.version>4.12</junit.version>
 
@@ -72,10 +72,16 @@
 		</dependency>
 
 		<!-- Akka -->
-		
+
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-actor_2.11</artifactId>
+			<version>${akka.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-remote_2.11</artifactId>
 			<version>${akka.version}</version>
 		</dependency>
 
