@@ -43,7 +43,7 @@
 		<lmax.version>3.3.6</lmax.version>
 		<akka.version>2.5.17</akka.version>
 
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 
 		<!-- Compiler properties -->
 
